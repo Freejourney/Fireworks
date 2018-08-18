@@ -141,7 +141,7 @@ class Population:
         for i in range(0,len(self.pop)):
             sum1+=self.pop[i].Ri/sr
             px.append(sum1)
-        for i in range(0,self.popsize):
+        for i in range(0,self.popsize-1):   # just need to get other n-1 pop
             rr=random.uniform(0,1)
             index=0;
             for j in range(0,len(self.pop)):
