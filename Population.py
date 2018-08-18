@@ -147,8 +147,10 @@ class Population:
             for j in range(0,len(self.pop)):
                 if j==0 and rr<px[j]:
                     index=j
+                    break
                 elif rr>=px[j] and rr<px[j+1]:
                     index=j+1
+                    break
             newpop.append(self.pop[index])
         self.pop=newpop
 
